@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bill
+class Bill     :   IDisplay
 {
     var billId          : Int
     var billDate        : Date
@@ -21,6 +21,12 @@ class Bill
         self.billDate = billDate
         self.billType = billType
         self.totalBillAmount = totalBillAmount
+    }
+    func Display() {
+        print(" billId              : \(self.billId)")
+         print(" billDate           : \(self.billDate)")
+         print(" billType           : \(self.billType)")
+         print(" totalBillAmount    : \(self.totalBillAmount)")
     }
     
 }
