@@ -9,4 +9,18 @@
 import Foundation
 
 class Bill
-
+{
+    var billId          : Int
+    var billDate        : Date
+    var billType        : String
+    var totalBillAmount : Double
+    
+    init (billId : Int, billDate : Date , billType : String , totalBillAmount : Double)
+    {
+        self.billId = billId
+        self.billDate = billDate
+        self.billType = billType
+        self.totalBillAmount = totalBillAmount
+    }
+    
+}
