@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B92F2F923F60B11001E3DC4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F2F823F60B11001E3DC4 /* main.swift */; };
 		9B92F30023F60C31001E3DC4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F2FF23F60C31001E3DC4 /* Bill.swift */; };
+		9B92F30223F610ED001E3DC4 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30123F610ED001E3DC4 /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		9B92F2F523F60B11001E3DC4 /* MAD3004_W2020_MidTerm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_W2020_MidTerm; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B92F2F823F60B11001E3DC4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B92F2FF23F60C31001E3DC4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		9B92F30123F610ED001E3DC4 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				9B92F2F823F60B11001E3DC4 /* main.swift */,
 				9B92F2FF23F60C31001E3DC4 /* Bill.swift */,
+				9B92F30123F610ED001E3DC4 /* IDisplay.swift */,
 			);
 			path = MAD3004_W2020_MidTerm;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				9B92F30023F60C31001E3DC4 /* Bill.swift in Sources */,
 				9B92F2F923F60B11001E3DC4 /* main.swift in Sources */,
+				9B92F30223F610ED001E3DC4 /* IDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
