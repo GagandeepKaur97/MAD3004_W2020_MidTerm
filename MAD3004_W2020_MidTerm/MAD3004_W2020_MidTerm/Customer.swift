@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Customer : Bill
+class Customer : IDisplay
 {
     var customerId : Int
     var firstName  : String
@@ -18,42 +18,46 @@ class Customer : Bill
         return "\(firstName) \(lastName)"
     }
     var emailId    : String
-    var totalAmountToPay: Double
-   lazy var billsDictionary = [String: Bill]()
+    var totalAmountToPay: Double = 0
+   lazy var billsDictionary = [Int: Bill]()
     
-    init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,customerId : Int ,firstName  : String,lastName   : String , fullName   : String ,emailId    : String ,totalAmountToPay: Double)
+    init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,customerId : Int ,firstName  : String,lastName   : String , fullName   : String ,emailId    : String )
         
       {
         self.customerId       = customerId
         self.firstName        = firstName
         self.lastName         = lastName
-       // self.fullName         = fullName
         self.emailId           = emailId
-        self.totalAmountToPay  = totalAmountToPay
-     //   billsDictionary.updateValue(Bill, forKey: customerId)
-        super.init(billId, billDate, billType, totalBillAmount)
+        
+     //  super.init(billId, billDate, billType, totalBillAmount)
         
     }
+    
+    func addBill(bill: Bill , billId: Int){
+        billsDictionary.updateValue(bill, forKey : billId)
+       
+    }
+    
     func calculateTotalBill(){
         for i in billsDictionary{
             totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
         }
     }
-    override func Display()
+   func Display()
     {
-        super.Display()
-        print("   customerId        :\(self.customerId  )")
-        print("   firstName         :\(self.firstName   )")
-        print("   lastName          :\(self.lastName    )")
-        print("   fullName          :\(self.fullName   )")
-        print("   emailId           :\(self.emailId   )")
+        
+        print("  \t customerId        :\(self.customerId  )")
+        //print("  \t firstName         :\(self.firstName   )")
+        //print("  \t lastName          :\(self.lastName    )")
+        print("  \t fullName          :\(self.fullName   )")
+        print("  \t emailId           :\(self.emailId   )")
         print(" _________Bill Information_______")
         print("**********************************************")
         for i in billsDictionary {
             
             i.value.Display()
         }
-        print("   totalAmountToPay  :  ")
+       // print("   totalAmountToPay  :  ")
         
         if billsDictionary.count == 0
         {
@@ -62,8 +66,9 @@ class Customer : Bill
         }
         else
         {
-            calculateTotalBill()
-            print("Total Bill Amount to pay : \(self.totalAmountToPay)" )
+            
+            print("Total Bill Amount to pay : \(calculateTotalBill())" )
+            print("***************************************************")
         }
         
         
