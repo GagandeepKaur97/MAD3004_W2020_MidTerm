@@ -44,9 +44,23 @@ class Customer : Bill
         print("   lastName          :\(self.lastName    )")
         print("   fullName          :\(self.fullName   )")
         print("   emailId           :\(self.emailId   )")
-        print("   totalAmountToPay  :\(self.totalAmountToPay   )")
         print(" _________Bill Information_______")
         print("**********************************************")
+        for i in billsDictionary {
+            i.value.Display()
+        }
+        print("   totalAmountToPay  :  ")
+        
+        if billsDictionary.count == 0
+        {
+            print("customer has no bill")
+            
+        }
+        else
+        {
+            calculateTotalBill()
+            print("Total Bill Amount to pay : \(self.totalAmountToPay)" )
+        }
         
         
     }
