@@ -16,6 +16,7 @@ class Customer : Bill
     var fullName   : String
     var emailId    : String
     var totalAmountToPay: Double
+    //var bills = [String: Bill]
     
     init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,customerId : Int ,firstName  : String,lastName   : String , fullName   : String ,emailId    : String ,totalAmountToPay: Double)
         
@@ -33,11 +34,13 @@ class Customer : Bill
     {
         super.Display()
         print("   customerId        :\(self.customerId  )")
-        print("   firstName       :\(self.firstName   )")
+        print("   firstName         :\(self.firstName   )")
         print("   lastName          :\(self.lastName    )")
         print("   fullName          :\(self.fullName   )")
         print("   emailId           :\(self.emailId   )")
         print("   totalAmountToPay  :\(self.totalAmountToPay   )")
+        print(" _________Bill Information_______")
+        print("**********************************************")
         
         
     }

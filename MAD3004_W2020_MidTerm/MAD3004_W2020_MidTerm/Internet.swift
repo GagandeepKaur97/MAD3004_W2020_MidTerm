@@ -11,12 +11,12 @@ import Foundation
 class Internet : Bill
 {
     var providerName  : String
-    var internetGb    : String
+    var internetGbUsed    : Int
     
-        init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double , providerName : String , internetGb: String)
+        init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double , providerName : String , internetGbUsed: Int)
     {
         self.providerName = providerName
-        self.internetGb = internetGb
+        self.internetGbUsed = internetGbUsed
         super.init (billId , billDate, billType, totalBillAmount)
     }
     
@@ -25,6 +25,6 @@ class Internet : Bill
     super.Display()
     
     print(" providerName        : \(self.providerName)")
-    print(" internetGb          : \(self.internetGb)")
+    print(" internetGb          : \(self.internetGbUsed)GB")
     }
     }
