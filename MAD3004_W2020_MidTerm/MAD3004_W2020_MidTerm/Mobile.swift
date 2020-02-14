@@ -24,7 +24,7 @@ class Mobile : Bill
         self.mobileNumber = mobileNumber
         self.internetGbUsed = internetGbUsed
         self.minuteUsed = minuteUsed
-        super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
+        super.init(billId, billDate, billType, totalBillAmount )
     }
     
     override func Display()

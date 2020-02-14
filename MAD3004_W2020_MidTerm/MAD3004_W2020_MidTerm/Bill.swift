@@ -15,7 +15,7 @@ class Bill     :   IDisplay
     var billType        : String
     var totalBillAmount : Double
     
-    init (billId : Int, billDate : Date , billType : String , totalBillAmount : Double)
+    init (_ billId : Int, _ billDate : Date , _ billType : String , _ totalBillAmount : Double)
     {
         self.billId = billId
         self.billDate = billDate

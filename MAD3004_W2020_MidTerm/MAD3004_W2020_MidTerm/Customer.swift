@@ -26,7 +26,7 @@ class Customer : Bill
         self.fullName         = fullName
         self.emailId           = emailId
         self.totalAmountToPay  = totalAmountToPay
-        super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount )
+        super.init(billId, billDate, billType, totalBillAmount)
         
     }
     override func Display()
