@@ -29,7 +29,16 @@ class Customer : Bill
         super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount )
         
     }
-    override func Display() {
+    override func Display()
+    {
         super.Display()
+        print("   customerId        :\(self.customerId  )")
+        print("   firstName       :\(self.firstName   )")
+        print("   lastName          :\(self.lastName    )")
+        print("   fullName          :\(self.fullName   )")
+        print("   emailId           :\(self.emailId   )")
+        print("   totalAmountToPay  :\(self.totalAmountToPay   )")
+        
+        
     }
 }
