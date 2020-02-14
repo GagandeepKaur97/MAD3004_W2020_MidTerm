@@ -10,7 +10,7 @@ import Foundation
 
 class Hydro : Bill
 {
-    var agencyName : String
+    var agencyName   : String
     var unitConsumed : String
     
     
