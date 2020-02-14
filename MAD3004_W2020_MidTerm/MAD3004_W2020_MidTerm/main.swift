@@ -17,3 +17,4 @@ i1.Display()
 var m1 = Mobile(billId: 1, billDate: Date(), billType: "Mobile", totalBillAmount: 40, mobileManufacturerName: "charmi", planName: "prepaid + talk", mobileNumber: 768788888, internetGbUsed: 50, minuteUsed: 70)
 m1.Display()
 
+

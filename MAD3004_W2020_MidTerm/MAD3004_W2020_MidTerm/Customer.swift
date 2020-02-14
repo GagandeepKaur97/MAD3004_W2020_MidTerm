@@ -14,6 +14,9 @@ class Customer : Bill
     var firstName  : String
     var lastName   : String
     var fullName   : String
+    {
+        return "\(firstName) \(lastName)"
+    }
     var emailId    : String
     var totalAmountToPay: Double
    lazy var billsDictionary = [String: Bill]()
@@ -24,7 +27,7 @@ class Customer : Bill
         self.customerId       = customerId
         self.firstName        = firstName
         self.lastName         = lastName
-        self.fullName         = fullName
+       // self.fullName         = fullName
         self.emailId           = emailId
         self.totalAmountToPay  = totalAmountToPay
      //   billsDictionary.updateValue(Bill, forKey: customerId)
@@ -47,6 +50,7 @@ class Customer : Bill
         print(" _________Bill Information_______")
         print("**********************************************")
         for i in billsDictionary {
+            
             i.value.Display()
         }
         print("   totalAmountToPay  :  ")
