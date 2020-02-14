@@ -26,5 +26,6 @@ class Hydro : Bill
         
         print(" agencyName      :\(self.agencyName)")
         print(" unitConsumed    :\(self.unitConsumed )")
+        print("****************************************")
     }
 }

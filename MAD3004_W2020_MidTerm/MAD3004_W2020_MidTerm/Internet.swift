@@ -25,6 +25,7 @@ class Internet : Bill
     super.Display()
     
     print(" providerName        : \(self.providerName)")
-    print(" internetGb          : \(self.internetGbUsed)GB")
+    print(" internetGb          : \(self.internetGbUsed) GB")
+    print("*************************************************")
     }
     }

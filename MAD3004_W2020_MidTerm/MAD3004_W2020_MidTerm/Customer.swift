@@ -16,7 +16,7 @@ class Customer : Bill
     var fullName   : String
     var emailId    : String
     var totalAmountToPay: Double
-    //var bills = [String: Bill]
+   lazy var billsDictionary = [String: Bill]()
     
     init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,customerId : Int ,firstName  : String,lastName   : String , fullName   : String ,emailId    : String ,totalAmountToPay: Double)
         
@@ -27,8 +27,14 @@ class Customer : Bill
         self.fullName         = fullName
         self.emailId           = emailId
         self.totalAmountToPay  = totalAmountToPay
+     //   billsDictionary.updateValue(Bill, forKey: customerId)
         super.init(billId, billDate, billType, totalBillAmount)
         
+    }
+    func calculateTotalBill(){
+        for i in billsDictionary{
+            totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
+        }
     }
     override func Display()
     {

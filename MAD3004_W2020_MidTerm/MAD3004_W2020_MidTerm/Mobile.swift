@@ -35,7 +35,7 @@ class Mobile : Bill
         print(" mobileNumber              : \(self.mobileNumber)")
         print(" internetGbUsed            : \(self.internetGbUsed)GB")
         print(" minuteUsed                : \(self.minuteUsed)")
-               
+        print("************************************************")
         
     }
 }

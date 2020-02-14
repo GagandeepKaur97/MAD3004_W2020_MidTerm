@@ -26,7 +26,7 @@ class Bill     :   IDisplay
         print(" billId              : \(self.billId)")
          print(" billDate           : \(self.billDate)")
          print(" billType           : \(self.billType)")
-         print(" totalBillAmount    : \(self.totalBillAmount)")
+         print(" totalBillAmount    : $\(self.totalBillAmount)")
     }
     
 }
