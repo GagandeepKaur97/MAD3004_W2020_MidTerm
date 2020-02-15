@@ -21,7 +21,7 @@ class Customer : IDisplay
     var totalAmountToPay: Double = 0
    lazy var billsDictionary = [Int: Bill]()
     
-    init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,customerId : Int ,firstName  : String,lastName   : String , fullName   : String ,emailId    : String )
+    init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String )
         
       {
         self.customerId       = customerId
