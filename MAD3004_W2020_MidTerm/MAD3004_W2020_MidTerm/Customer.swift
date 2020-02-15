@@ -38,19 +38,22 @@ class Customer : IDisplay
        
     }
     
-    func calculateTotalBill(){
+    func calculateTotalBill()-> Double
+    {
         for i in billsDictionary{
             totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
         }
+        return totalAmountToPay
     }
    func Display()
     {
         
-        print("  \t customerId        :\(self.customerId  )")
+        print("customerId        :\(self.customerId  )")
         //print("  \t firstName         :\(self.firstName   )")
         //print("  \t lastName          :\(self.lastName    )")
-        print("  \t fullName          :\(self.fullName   )")
-        print("  \t emailId           :\(self.emailId   )")
+        print("fullName          :\(self.fullName   )")
+        print("emailId           :\(self.emailId   )")
+        
         print(" _________Bill Information_______")
         print("**********************************************")
         for i in billsDictionary {
@@ -67,7 +70,7 @@ class Customer : IDisplay
         else
         {
             
-            print("Total Bill Amount to pay : \(calculateTotalBill())" )
+            print("Total Bill Amount to pay :\(calculateTotalBill())" )
             print("***************************************************")
         }
         

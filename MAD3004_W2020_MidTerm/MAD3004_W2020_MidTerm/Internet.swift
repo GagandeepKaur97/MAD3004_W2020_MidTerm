@@ -17,15 +17,17 @@ class Internet : Bill
     {
         self.providerName = providerName
         self.internetGbUsed = internetGbUsed
-        super.init (billId , billDate, billType, totalBillAmount)
+          //self.totalBillAmount = totalBillAmount
+        super.init (billId , billDate, billType)
+        self.totalBillAmount = totalBillAmount
     }
     
    override func Display()
    {
     super.Display()
     
-    print(" providerName        : \(self.providerName)")
-    print(" internetGb          : \(self.internetGbUsed) GB")
+    print(" \t providerName        : \(self.providerName)")
+    print(" \t internetGb          : \(self.internetGbUsed) GB")
     print("*************************************************")
     }
     }

@@ -13,20 +13,20 @@ class Bill     :   IDisplay
     var billId          : Int
     var billDate        : Date
     var billType        : String
-    var totalBillAmount : Double
+    var totalBillAmount : Double = 0 
     
-    init (_ billId : Int, _ billDate : Date , _ billType : String , _ totalBillAmount : Double)
+    init (_ billId : Int, _ billDate : Date , _ billType : String )
     {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-        self.totalBillAmount = totalBillAmount
+       
     }
     func Display() {
-        print(" billId              : \(self.billId)")
-         print(" billDate           : \(self.billDate)")
-         print(" billType           : \(self.billType)")
-         print(" totalBillAmount    : $\(self.totalBillAmount)")
+         print("\t billId                    : \(self.billId)")
+         print("\t billDate                  : \(self.billDate)")
+         print("\t billType                  : \(self.billType)")
+         print("\t totalBillAmount           : $\(self.totalBillAmount)")
     }
     
 }
