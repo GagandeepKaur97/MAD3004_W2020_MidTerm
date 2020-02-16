@@ -29,5 +29,16 @@ class Insurance : Bill
         
     super.init (billId , billDate, billType)
 
-}
+    }
+    override func Display()
+    {
+        super.Display()
+    print(" \t InsuranceProviderName : \(self.InsuranceProviderName)")
+    print(" \t TypeOfInsurance       : \(self.TypeOfInsurance) ")
+    print(" \t StartDate             : \(self.StartDate) ")
+    print(" \t EndDate               : \(self.EndDate) ")
+    print(" \t TotalDays             : \(self.TotalDays) ")
+    print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
+
+    }
 }

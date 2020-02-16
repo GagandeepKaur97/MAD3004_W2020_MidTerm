@@ -26,7 +26,7 @@ class Hydro : Bill
     {
         super.Display()
         
-        print(" \t GgencyName      :\(self.agencyName)")
+        print(" \t AgencyName      :\(self.agencyName)")
         print(" \t UnitConsumed    :\(self.unitConsumed ) units")
         print("****************************************")
     }
