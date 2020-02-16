@@ -8,25 +8,26 @@
 
 import Foundation
 
-class Bill     :   IDisplay
-{
+class Bill     :   IDisplay{
+    
+    
     var billId          : Int
     var billDate        : Date
     var billType        : String
     var totalBillAmount : Double = 0 
     
-    init (_ billId : Int, _ billDate : Date , _ billType : String )
-    {
+    init (_ billId : Int, _ billDate : Date , _ billType : String ){
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-       
     }
+    
+    
     func Display() {
-         print("\t billId                    : \(self.billId)")
-         print("\t billDate                  : \(self.billDate)")
-         print("\t billType                  : \(self.billType)")
-         print("\t totalBillAmount           : $\(self.totalBillAmount)")
+         print("\t BillId                    : \(self.billId)")
+         print("\t BillDate                  : \(self.billDate)")
+         print("\t BillType                  : \(self.billType)")
+         print("\t TotalBillAmount           : $\(self.totalBillAmount)")
     }
     
 }

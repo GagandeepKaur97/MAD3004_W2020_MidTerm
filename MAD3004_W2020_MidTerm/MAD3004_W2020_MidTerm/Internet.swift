@@ -26,8 +26,8 @@ class Internet : Bill
    {
     super.Display()
     
-    print(" \t providerName              : \(self.providerName)")
-    print(" \t internetGb                : \(self.internetGbUsed) GB")
+    print(" \t ProviderName              : \(self.providerName)")
+    print(" \t InternetGb                : \(self.internetGbUsed) GB")
     print("*************************************************")
     
     }

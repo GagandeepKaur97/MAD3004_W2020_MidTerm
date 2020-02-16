@@ -33,11 +33,11 @@ class Mobile : Bill
     override func Display()
     {
         super.Display()
-        print("\t mobileManufacturerName    : \(self.mobileManufacturerName)")
-        print("\t planName                  : \(self.planName)")
-        print("\t mobileNumber              : \(self.mobileNumber)")
-        print("\t internetGbUsed            : \(self.internetGbUsed)GB")
-        print("\t minuteUsed                : \(self.minuteUsed)")
+        print("\t MobileManufacturerName    : \(self.mobileManufacturerName)")
+        print("\t PlanName                  : \(self.planName)")
+        print("\t MobileNumber              : \(self.mobileNumber)")
+        print("\t InternetGbUsed            : \(self.internetGbUsed)GB")
+        print("\t MinuteUsed                : \(self.minuteUsed) minutes")
         print("************************************************")
         
     }

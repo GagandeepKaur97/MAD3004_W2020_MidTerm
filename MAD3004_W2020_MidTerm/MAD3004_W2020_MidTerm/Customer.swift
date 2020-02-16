@@ -21,7 +21,7 @@ class Customer : IDisplay
     var totalAmountToPay: Double = 0
    lazy var billsDictionary = [Int: Bill]()
     
-    init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String )
+    init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String)
         
       {
         self.customerId       = customerId
@@ -41,18 +41,20 @@ class Customer : IDisplay
     func calculateTotalBill()-> Double
     {
         for i in billsDictionary{
+            
             totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
+            
         }
         return totalAmountToPay
     }
    func Display()
     {
         
-        print("customerId        :\(self.customerId  )")
+        print("CustomerId        :\(self.customerId  )")
         //print("  \t firstName         :\(self.firstName   )")
         //print("  \t lastName          :\(self.lastName    )")
-        print("fullName          :\(self.fullName   )")
-        print("emailId           :\(self.emailId   )")
+        print("FullName          :\(self.fullName   )")
+        print("EmailId           :\(self.emailId   )")
         
         print(" _________Bill Information_______")
         print("**********************************************")
@@ -64,7 +66,7 @@ class Customer : IDisplay
         
         if billsDictionary.count == 0
         {
-            print("customer has no bill")
+            print("Customer has no bill")
             
         }
         else
