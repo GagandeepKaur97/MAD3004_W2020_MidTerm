@@ -10,6 +10,9 @@ import Foundation
 
 class Customer : IDisplay
 {
+    
+    
+    var bills = [Bill]()
     var customerId : Int
     var firstName  : String
     var lastName   : String
@@ -19,7 +22,7 @@ class Customer : IDisplay
     }
     var emailId    : String
     var totalAmountToPay: Double = 0
-    var billsDictionary = [Int: Bill]()
+    var billsDictionary = [Int: [Bill]]()
     
     init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String)
         
@@ -33,19 +36,23 @@ class Customer : IDisplay
         
     }
     
-    func addBill(bill: Bill , billId: Int){
-        billsDictionary.updateValue(bill, forKey: billId)
+    func addBill(bill: Bill){
+        bills.append(bill)
+        billsDictionary.updateValue(bills, forKey: customerId)
        
     }
     
     func calculateTotalBill()-> Double
     {
-        totalAmountToPay = 0
-        for i in billsDictionary{
-            
-            
-            totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
-            
+
+//        for i in billsDictionary{
+//
+//
+//            totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
+//
+//        }
+        for item in bills {
+            totalAmountToPay = totalAmountToPay + item.totalBillAmount
         }
         return totalAmountToPay
     }
@@ -59,22 +66,26 @@ class Customer : IDisplay
         print("EmailId           :\(self.emailId   )")
         
         print(" _________Bill Information_______")
-        print("**********************************************")
-        for i in billsDictionary {
-            
-            i.value.Display()
+        print("***************************************************")
+//        for i in billsDictionary {
+//
+//            i.value.Display()
+//        }
+        for item in bills {
+            item.Display()
         }
        // print("   totalAmountToPay  :  ")
         
         if billsDictionary.count == 0
         {
-            print("Customer has no bill")
+            print("       Customer has no bill")
+            print("***************************************************")
             
         }
         else
         {
             
-            print("Total Bill Amount to pay :\(calculateTotalBill())" )
+            print("       Total Bill Amount to pay :\(calculateTotalBill())" )
             print("***************************************************")
         }
         

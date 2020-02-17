@@ -28,7 +28,7 @@ class Internet : Bill
     
     print(" \t ProviderName              : \(self.providerName)")
     print(" \t InternetGb                : \(self.internetGbUsed) GB")
-    print("*************************************************")
+    print("***************************************************")
     
     }
     }

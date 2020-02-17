@@ -8,26 +8,30 @@
 
 import Foundation
 
-var c1 = Customer(customerId: 1, firstName: "pritesh", lastName: "patel",   emailId: "nancymaan04@gmail.com")
-var c2 = Customer( customerId: 2, firstName: "gagan", lastName: "kaur", emailId: "sherry12.@hotmail.com")
-var c3 = Customer( customerId: 3, firstName: "charmi", lastName: "patel", emailId: "charmi@gmail.com")
+let c1 = Customer(customerId: 1, firstName: "pritesh", lastName: "patel", emailId: "amallabyg@topsy.com")
 
-let h1 = Hydro(billId: 1, billDate: Date(), billType: "Hydro", agencyName: "Planet energy", unitConsumed: 29)
-var i1 = Internet(billId: 2, billDate: Date(), billType: "Internet", providerName: "rogers"
-    , internetGbUsed: 500)
+let c1h = Hydro(billId: 1, billDate: Date(), billType: "Hydro", agencyName: "Planet Energy", unitConsumed: 29)
+let c1i = Internet(billId: 1, billDate: Date(), billType: "Internet", providerName: "Rogers", internetGbUsed: 500)
 
-//
-//var m1 = Mobile(billId: 1, billDate: Date(), billType: "Mobile", totalBillAmount: 40, mobileManufacturerName: "charmi", planName: "prepaid + talk", mobileNumber: 768788888, internetGbUsed: 50, minuteUsed: 70)
-//var m2 = Mobile(billId: 2, billDate: Date(), billType: "Mobile", totalBillAmount: 60, mobileManufacturerName: "kapil", planName: "rogers", mobileNumber: 6578930927, internetGbUsed: 65, minuteUsed: 90)
+c1.addBill(bill: c1h)
+c1.addBill(bill: c1i)
 
-//c1.addBill(bill: m1, billId: m1.billId)
-//c1.addBill(bill: m2, billId: m2.billId)
-////c2.addBill(bill: i1, billId: i1.billId)
-//c1.Display()
-////c2.Display()
-////c3.Display()
-//
-c1.addBill(bill: h1, billId: h1.billId)
 c1.Display()
-c1.addBill(bill: i1, billId: i1.billId)
-c1.Display()
+
+let c2 = Customer(customerId: 2, firstName: "vipul", lastName: "garg", emailId: "adurram@gmail.com")
+
+let c2h = Hydro(billId: 1, billDate: Date(), billType: "Hydro", agencyName: "Planet energy", unitConsumed: 29)
+let c2i = Internet(billId: 1, billDate: Date(), billType: "Internet", providerName: "rogers", internetGbUsed: 500)
+let c2m = Mobile(billId: 1, billDate: Date(), billType: "Mobile", mobileManufacturerName: "Galaxy samsung INC", planName: "prepaid talk + TAX plan", mobileNumber: 877765657868, internetGbUsed: 5, minuteUsed: 356)
+let c2m2 = Mobile(billId: 1, billDate: Date(), billType: "Mobile", mobileManufacturerName: "Apple INC.Iphone X MAX+", planName: "Lte + 3G 9.5 GB promo plan", mobileNumber: 769663579, internetGbUsed: 4, minuteUsed: 230)
+
+c2.addBill(bill: c2h)
+c2.addBill(bill: c2i)
+c2.addBill(bill: c2m)
+c2.addBill(bill: c2m2)
+
+c2.Display()
+
+let c3 = Customer(customerId: 3, firstName: "anita", lastName: "langrik", emailId: "hwegdue@gmail.com")
+
+c3.Display()

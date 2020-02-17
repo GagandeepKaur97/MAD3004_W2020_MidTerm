@@ -26,13 +26,13 @@ class Bill     :   IDisplay{
         formatter.dateFormat = "EEE, MMM,dd"
         let hourformatter = DateFormatter()
         hourformatter.dateFormat = "h:mm a"
-        date = formatter.string(from: billDate) + hourformatter.string(from: billDate)
+        date = formatter.string(from: billDate) + "  " + hourformatter.string(from: billDate)
     }
     
     
     func Display() {
          print("\t BillId                    : \(self.billId)")
-        print("\t BillDate                   : \(self.date)")
+         print("\t BillDate                  : \(self.date)")
          print("\t BillType                  : \(self.billType)")
          print("\t TotalBillAmount           : $\(self.totalBillAmount)")
     }
