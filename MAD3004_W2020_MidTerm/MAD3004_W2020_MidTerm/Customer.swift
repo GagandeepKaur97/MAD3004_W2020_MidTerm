@@ -12,7 +12,7 @@ class Customer : IDisplay
 {
     
     
-    var bills = [Bill]()
+    
     var customerId : Int
     var firstName  : String
     var lastName   : String
@@ -23,6 +23,9 @@ class Customer : IDisplay
     var emailId    : String
     var totalAmountToPay: Double = 0
     var billsDictionary = [Int: [Bill]]()
+    var bills = [Bill]()
+    
+   public static var customerDetails = [Customer]()
     
     init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String)
         
@@ -91,4 +94,6 @@ class Customer : IDisplay
         
         
     }
+    
+   
 }
