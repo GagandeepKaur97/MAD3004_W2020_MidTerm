@@ -19,7 +19,7 @@ class Customer : IDisplay
     }
     var emailId    : String
     var totalAmountToPay: Double = 0
-   lazy var billsDictionary = [Int: Bill]()
+    var billsDictionary = [Int: Bill]()
     
     init(customerId : Int ,firstName  : String,lastName   : String   ,emailId    : String)
         
@@ -34,13 +34,15 @@ class Customer : IDisplay
     }
     
     func addBill(bill: Bill , billId: Int){
-        billsDictionary.updateValue(bill, forKey : billId)
+        billsDictionary.updateValue(bill, forKey: billId)
        
     }
     
     func calculateTotalBill()-> Double
     {
+        totalAmountToPay = 0
         for i in billsDictionary{
+            
             
             totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
             

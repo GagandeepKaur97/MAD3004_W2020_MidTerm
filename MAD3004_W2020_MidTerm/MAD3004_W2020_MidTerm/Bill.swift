@@ -14,18 +14,25 @@ class Bill     :   IDisplay{
     var billId          : Int
     var billDate        : Date
     var billType        : String
-    var totalBillAmount : Double = 0 
+    var totalBillAmount : Double
+    var date :String
     
     init (_ billId : Int, _ billDate : Date , _ billType : String ){
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
+        self.totalBillAmount = 0
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE, MMM,dd"
+        let hourformatter = DateFormatter()
+        hourformatter.dateFormat = "h:mm a"
+        date = formatter.string(from: billDate) + hourformatter.string(from: billDate)
     }
     
     
     func Display() {
          print("\t BillId                    : \(self.billId)")
-         print("\t BillDate                  : \(self.billDate)")
+        print("\t BillDate                   : \(self.date)")
          print("\t BillType                  : \(self.billType)")
          print("\t TotalBillAmount           : $\(self.totalBillAmount)")
     }

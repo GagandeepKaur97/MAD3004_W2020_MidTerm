@@ -16,7 +16,7 @@ class Mobile : Bill
     var internetGbUsed         : Int
     var minuteUsed             : Int
     
-     init(billId: Int, billDate: Date, billType: String, totalBillAmount: Double ,mobileManufacturerName: String , planName: String , mobileNumber : Int , internetGbUsed :Int , minuteUsed : Int )
+     init(billId: Int, billDate: Date, billType: String,mobileManufacturerName: String , planName: String , mobileNumber : Int , internetGbUsed :Int , minuteUsed : Int )
         
     {
         self.mobileManufacturerName = mobileManufacturerName
@@ -26,7 +26,7 @@ class Mobile : Bill
         self.minuteUsed = minuteUsed
       // self.totalBillAmount = totalBillAmount
         super.init(billId, billDate, billType )
-        self.totalBillAmount = totalBillAmount
+        self.totalBillAmount = Double(minuteUsed) * 0.10
         
     }
     
