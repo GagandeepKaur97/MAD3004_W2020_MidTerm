@@ -25,7 +25,7 @@ class Bill     :   IDisplay{
         let formatter = DateFormatter()
         formatter.dateFormat = "EEE, MMM,dd"
         let hourformatter = DateFormatter()
-        hourformatter.dateFormat = "h:mm a"
+        hourformatter.dateFormat = "hh:mm a"
         date = formatter.string(from: billDate) + "  " + hourformatter.string(from: billDate)
     }
     
