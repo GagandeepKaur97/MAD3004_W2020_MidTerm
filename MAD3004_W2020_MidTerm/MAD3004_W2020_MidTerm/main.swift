@@ -19,7 +19,6 @@ func getCustomerById(cId : Int)  {
                isExist = true
                break
            }
-           isExist = false
            
        }
        if !isExist{
@@ -28,9 +27,6 @@ func getCustomerById(cId : Int)  {
        
 }
 
-func findBill(for id : Int){
-    <#function body#>
-}
 
 let c1 = Customer(customerId: 1, firstName: "pritesh", lastName: "patel", emailId: "amallabyg@topsy.com")
 
@@ -41,6 +37,7 @@ c1.addBill(bill: c1h)
 c1.addBill(bill: c1i)
 
 Customer.customerDetails.append(c1)
+c1.findBill(for: 2)
 
 //c1.Display()
 

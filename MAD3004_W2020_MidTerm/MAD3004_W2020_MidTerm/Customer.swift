@@ -95,5 +95,28 @@ class Customer : IDisplay
         
     }
     
+    func findBill(for id :Int){
+        var billid : Int
+        var exixt = false
+        
+        for item in bills {
+            billid = item.billId
+            if billid == id{
+                print("***************************************************")
+                print("--------------------Bill Details-------------------")
+                item.Display()
+                print("***************************************************")
+                exixt = true
+                break
+            }
+        }
+        
+        if !exixt{
+            print("***************************************************")
+            print("         No bill found with given index...........")
+            print("***************************************************")
+        }
+    }
+    
    
 }
