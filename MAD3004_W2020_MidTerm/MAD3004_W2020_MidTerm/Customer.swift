@@ -57,7 +57,7 @@ enum CustomerNotFound {
     
        
         for item in bills {
-            totalAmountToPay = totalAmountToPay + item.totalBillAmount
+            totalAmountToPay = totalAmountToPay + Double(item.totalBillAmount)
         }
         return totalAmountToPay
     }

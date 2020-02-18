@@ -14,7 +14,7 @@ class Bill     :   IDisplay{
     var billId          : Int
     var billDate        : Date
     var billType        : BillType
-    var totalBillAmount : Double
+    var totalBillAmount : Int
     var date :String
     
     init (_ billId : Int, _ billDate : Date , _ billType : BillType ){
@@ -34,7 +34,7 @@ class Bill     :   IDisplay{
          print("\t BillId                    : \(self.billId)")
          print("\t BillDate                  : \(self.date)")
          print("\t BillType                  : \(self.billType)")
-         print("\t TotalBillAmount           : $\(self.totalBillAmount)")
+        print("\t TotalBillAmount           : \(totalBillAmount.b())")
     }
     
 }

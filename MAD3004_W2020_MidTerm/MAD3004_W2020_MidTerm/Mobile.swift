@@ -29,7 +29,7 @@ class Mobile : Bill
         self.minuteUsed     = minuteUsed
       // self.totalBillAmount = totalBillAmount
         super.init(billId, billDate, billType )
-        self.totalBillAmount = Double(minuteUsed) * 0.10
+        self.totalBillAmount = Int(Double(minuteUsed) * 0.10)
         
     }
     
@@ -40,7 +40,7 @@ class Mobile : Bill
         print("\t PlanName                  : \(self.planName)")
         print("\t MobileNumber              : \(String(describing: self.mobileNumber))")
         print("\t InternetGbUsed            : \(self.internetGbUsed)GB")
-        print("\t MinuteUsed                : \(self.minuteUsed) minutes")
+        print("\t MinuteUsed                : \(minuteUsed.m())")
         print("***************************************************")
         
     }
