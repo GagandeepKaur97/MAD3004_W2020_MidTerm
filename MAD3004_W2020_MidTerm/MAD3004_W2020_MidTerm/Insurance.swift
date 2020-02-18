@@ -23,7 +23,7 @@ class Insurance : Bill
     var TotalDays             : Int
     var TotalInstallmentToPay : Float = 0.0
     
-    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date ,TotalDays : Int ,TotalInstallmentToPay : Float)
+    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date  ,TotalInstallmentToPay : Float)
 
     {
         self.InsuranceProviderName = InsuranceProviderName
@@ -32,7 +32,7 @@ class Insurance : Bill
        formatter.dateFormat = "EEE, MMM,dd"
        self.StartDate             = StartDate
         self.EndDate               = EndDate
-        self.TotalDays             = TotalDays
+        self.TotalDays             = Calendar.current.dateComponents([.day], from: StartDate, to: EndDate).day!
         self.TotalInstallmentToPay = TotalInstallmentToPay
         
        
@@ -51,8 +51,8 @@ class Insurance : Bill
         let date2 = EndDate.formatingDate(Date:EndDate)
         
     print(" \t EndDate               : \(date2) ")
-    let days = calender.current.datecomponents([.day], from: StartDate , to : EndDate).day!
-    print(" \t TotalDays             : \(Days) ")
+   
+    print(" \t TotalDays             : \(TotalDays) ")
     print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
 
     }
