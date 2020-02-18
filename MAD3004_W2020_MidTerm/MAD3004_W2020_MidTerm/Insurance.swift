@@ -23,16 +23,16 @@ class Insurance : Bill
     var TotalDays             : Int
     var TotalInstallmentToPay : Float = 0.0
     
-    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date  ,TotalInstallmentToPay : Float)
+    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date  )
 
     {
         self.InsuranceProviderName = InsuranceProviderName
         self.TypeOfInsurance       = TypeOfInsurance
     
-       self.StartDate             = StartDate
+        self.StartDate             = StartDate
         self.EndDate               = EndDate
         self.TotalDays             = Calendar.current.dateComponents([.day], from: StartDate, to: EndDate).day!
-        self.TotalInstallmentToPay = TotalInstallmentToPay
+        self.TotalInstallmentToPay = Float(TotalDays) * 100 
         
        
         super.init (billId , billDate, billType)

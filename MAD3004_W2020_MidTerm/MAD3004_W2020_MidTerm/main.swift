@@ -81,6 +81,6 @@ let di4 = calendar.date(from: d4)
 
 let d5 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 22)
 let di5 = calendar.date(from: d5)
-var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .mobile , StartDate: dm2!,EndDate: dm1!, TotalInstallmentToPay: 123)
+var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .mobile , StartDate: dm2!,EndDate: dm1!)
 ins1.Display()
 getCustomerById(cId: 3)
