@@ -40,7 +40,7 @@ Customer.customerDetails.append(c1)
 
 c1.findBill(for: 1)// this is used to display bill by bill id .
 
-//c1.Display()
+c1.Display()
 
 let c2 = Customer(customerId: 2, firstName: "vipul", lastName: "garg", emailId: "adurramgmail.com")
 
@@ -54,17 +54,17 @@ c2.addBill(bill: c2i)
 c2.addBill(bill: c2m)
 c2.addBill(bill: c2m2)
 
-//c2.Display()
+c2.Display()
 Customer.customerDetails.append(c2)
 
 let c3 = Customer(customerId: 3, firstName: "anita", lastName: "langrik", emailId: "hwegdue@gmail.com")
 let c3m = Mobile(billId: 1, billDate: Date(), billType: .Mobile, mobileManufacturerName: "bell", planName: "postpaid", mobileNumber: "6578978946", internetGbUsed: 12, minuteUsed: 250)
 
-//c3.Display()
+c3.Display()
 c3.addBill(bill: c3m)
 Customer.customerDetails.append(c3)
 let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: "sherry2312.gk@gmail.com")
-//c4.Display()
+c4.Display()
 Customer.customerDetails.append(c4)
 
 let calendar = Calendar.current
@@ -83,5 +83,5 @@ let dh4 = calendar.date(from: d4)
 let d5 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 22)
 let dh5 = calendar.date(from: d5)
 var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .home , StartDate: dh4!,EndDate: dh5!)
-//ins1.Display()
+ins1.Display()
 getCustomerById(cId: 2)
