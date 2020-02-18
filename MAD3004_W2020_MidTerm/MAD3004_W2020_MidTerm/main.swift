@@ -65,4 +65,5 @@ Customer.customerDetails.append(c3)
 let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: "sherry2312.gk@gmail.com")
 //c4.Display()
 Customer.customerDetails.append(c4)
+var ins1 = Insurance(billId: 1, billDate: Date, billType: .Mobile, InsuranceProviderName: "jeevan", TypeOfInsurance: .mobile, StartDate: Date, EndDate: Date , TotalDays: <#T##Int#>, TotalInstallmentToPay: <#T##Float#>)0
 getCustomerById(cId: 3)

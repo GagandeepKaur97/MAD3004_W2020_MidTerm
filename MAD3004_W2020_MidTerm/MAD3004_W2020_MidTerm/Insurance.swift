@@ -28,13 +28,16 @@ class Insurance : Bill
     {
         self.InsuranceProviderName = InsuranceProviderName
         self.TypeOfInsurance       = TypeOfInsurance
-        self.StartDate             = StartDate
+       let formatter = DateFormatter()
+       formatter.dateFormat = "EEE, MMM,dd"
+       self.StartDate             = StartDate
         self.EndDate               = EndDate
         self.TotalDays             = TotalDays
         self.TotalInstallmentToPay = TotalInstallmentToPay
         
+       
         super.init (billId , billDate, billType)
-
+        
     }
      
     override func Display()
@@ -42,9 +45,14 @@ class Insurance : Bill
         super.Display()
     print(" \t InsuranceProviderName : \(self.InsuranceProviderName)")
     print(" \t TypeOfInsurance       : \(self.TypeOfInsurance) ")
-    print(" \t StartDate             : \(self.StartDate) ")
-    print(" \t EndDate               : \(self.EndDate) ")
-    print(" \t TotalDays             : \(self.TotalDays) ")
+        let date = StartDate.formatingDate(Date: StartDate)
+         
+    print(" \t StartDate             : \(date) ")
+        let date2 = EndDate.formatingDate(Date:EndDate)
+        
+    print(" \t EndDate               : \(date2) ")
+        let days = calender.current.datecomponents([.day], frpm: StartDate , to : EndDate).day!
+    print(" \t TotalDays             : \(Days) ")
     print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
 
     }

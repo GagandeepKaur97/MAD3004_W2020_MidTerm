@@ -8,6 +8,7 @@
 
 import Foundation
 
-enum BillType {
+enum BillType
+{
     case Hydro , Internet ,Mobile
 }
