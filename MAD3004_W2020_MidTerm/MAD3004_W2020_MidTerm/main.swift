@@ -67,3 +67,18 @@ let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: 
 Customer.customerDetails.append(c4)
 
 getCustomerById(cId: 3)
+/*let calendar = Calendar.current
+let d1 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 26)
+let dm1 = calendar.date(from: d1)
+
+let d2 = DateComponents(calendar: calendar, year: 2019, month: 9, day: 25)
+let dm2 = calendar.date(from: d2)
+
+let d3 = DateComponents(calendar: calendar, year: 2019, month: 8, day: 24)
+let dh3 = calendar.date(from: d3)
+
+let d4 = DateComponents(calendar: calendar, year: 2019, month: 7, day: 23)
+let di4 = calendar.date(from: d4)
+
+let d5 = DateComponents(calendar: calendar, year: 2019, month: 6, day: 22)
+let di5 = calendar.date(from: d5)*/
