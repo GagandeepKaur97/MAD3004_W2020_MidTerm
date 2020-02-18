@@ -51,8 +51,8 @@ class Insurance : Bill
         let date2 = EndDate.formatingDate(Date:EndDate)
         
     print(" \t EndDate               : \(date2) ")
-        let days = calender.current.datecomponents([.day], frpm: StartDate , to : EndDate).day!
-    print(" \t TotalDays             : \(Days) ")
+       //let days = calender.current.datecomponents([.day], frpm: StartDate , to : EndDate).day!
+  //  print(" \t TotalDays             : \(Days) ")
     print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
 
     }
