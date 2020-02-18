@@ -11,34 +11,30 @@ enum InsuranceType {
     case mobile, home
     
 }
+
 class Insurance : Bill
 {
     var InsuranceProviderName : String
-    var TypeOfInsurance : InsuranceType
-    var StartDate : Date
-    var EndDate : Date
-    var TotalDays : Int
-    var TotalInstallmentToPay : Double
+    var TypeOfInsurance       : InsuranceType
+    var StartDate             : Date
+    var EndDate               : Date
+    var TotalDays             : Int
+    var TotalInstallmentToPay : Float = 0.0
     
-    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date ,TotalDays : Int ,TotalInstallmentToPay : Double)
+    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date ,TotalDays : Int ,TotalInstallmentToPay : Float)
 
     {
         self.InsuranceProviderName = InsuranceProviderName
-        self.TypeOfInsurance = TypeOfInsurance
-        self.StartDate = StartDate
-        self.EndDate = EndDate
-        self.TotalDays = TotalDays
+        self.TypeOfInsurance       = TypeOfInsurance
+        self.StartDate             = StartDate
+        self.EndDate               = EndDate
+        self.TotalDays             = TotalDays
         self.TotalInstallmentToPay = TotalInstallmentToPay
         
         super.init (billId , billDate, billType)
 
     }
-    //func StartingDate(String : (String) -> Date
-                      //{
-     //   let dateformatGet1 = DateFormatGet1.date(from : startDate)
-  //      return startDate1 !
-        
-    //    })
+     
     override func Display()
     {
         super.Display()
@@ -51,3 +47,4 @@ class Insurance : Bill
 
     }
 }
+

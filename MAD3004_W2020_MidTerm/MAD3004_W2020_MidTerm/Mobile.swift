@@ -24,9 +24,9 @@ class Mobile : Bill
         
         
 
-        self.mobileNumber = mobileNumber
+        self.mobileNumber   = mobileNumber
         self.internetGbUsed = internetGbUsed
-        self.minuteUsed = minuteUsed
+        self.minuteUsed     = minuteUsed
       // self.totalBillAmount = totalBillAmount
         super.init(billId, billDate, billType )
         self.totalBillAmount = Double(minuteUsed) * 0.10

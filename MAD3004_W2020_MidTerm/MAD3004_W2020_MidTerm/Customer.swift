@@ -20,10 +20,10 @@ enum CustomerNotFound {
     {
         return "\(firstName) \(lastName)"
     }
-    var emailId    : String
+    var emailId         : String
     var totalAmountToPay: Double = 0
     var billsDictionary = [Int: [Bill]]()
-    var bills = [Bill]()
+    var bills           = [Bill]()
     
    public static var customerDetails = [Customer]()
     
@@ -33,6 +33,7 @@ enum CustomerNotFound {
         self.customerId       = customerId
         self.firstName        = firstName
         self.lastName         = lastName
+        
         if emailId.Emailvalidation() == true
         {
                 self.emailId = emailId
@@ -41,11 +42,6 @@ enum CustomerNotFound {
         {
             self.emailId = "Invalid email id \(emailId)"
         }
-                
-        
-        
-        
-
         
     }
     
@@ -58,12 +54,8 @@ enum CustomerNotFound {
     func calculateTotalBill()-> Double
     {
 
-//        for i in billsDictionary{
-//
-//
-//            totalAmountToPay = totalAmountToPay + i.value.totalBillAmount
-//
-//        }
+    
+       
         for item in bills {
             totalAmountToPay = totalAmountToPay + item.totalBillAmount
         }
@@ -73,8 +65,6 @@ enum CustomerNotFound {
     {
         
         print("CustomerId        :\(self.customerId  )")
-        //print("  \t firstName         :\(self.firstName   )")
-        //print("  \t lastName          :\(self.lastName    )")
         print("FullName          :\(self.fullName   )")
         print("EmailId           :\(String(describing: self.emailId)   )")
         
