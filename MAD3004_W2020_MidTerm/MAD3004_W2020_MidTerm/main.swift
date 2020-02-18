@@ -37,7 +37,7 @@ c1.addBill(bill: c1h)
 c1.addBill(bill: c1i)
 
 Customer.customerDetails.append(c1)
-c1.findBill(for: 2)
+c1.findBill(for: 1)// this is used to display bill by bill id .
 
 //c1.Display()
 
@@ -62,5 +62,7 @@ let c3m = Mobile(billId: 1, billDate: Date(), billType: .Mobile, mobileManufactu
 //c3.Display()
 c3.addBill(bill: c3m)
 Customer.customerDetails.append(c3)
-
-getCustomerById(cId: 3)
+let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: "sherry2312.gk@gmail.com")
+//c4.Display()
+Customer.customerDetails.append(c4)
+getCustomerById(cId: 5)
