@@ -37,7 +37,8 @@ c1.addBill(bill: c1h)
 c1.addBill(bill: c1i)
 
 Customer.customerDetails.append(c1)
-c1.findBill(for: 1)// this is used to display bill by bill id .
+
+//c1.findBill(for: 1)// this is used to display bill by bill id .
 
 //c1.Display()
 
@@ -77,10 +78,10 @@ let d3 = DateComponents(calendar: calendar, year: 2019, month: 5, day: 2)
 let dh3 = calendar.date(from: d3)
 
 let d4 = DateComponents(calendar: calendar, year: 2019, month: 3, day: 21)
-let di4 = calendar.date(from: d4)
+let dh4 = calendar.date(from: d4)
 
 let d5 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 22)
-let di5 = calendar.date(from: d5)
-var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .mobile , StartDate: dm2!,EndDate: dm1!)
-ins1.Display()
-getCustomerById(cId: 3)
+let dh5 = calendar.date(from: d5)
+var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .home , StartDate: dh4!,EndDate: dh5!)
+//ins1.Display()
+getCustomerById(cId: 2)

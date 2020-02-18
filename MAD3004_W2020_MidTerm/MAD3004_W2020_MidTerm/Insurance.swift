@@ -53,6 +53,7 @@ class Insurance : Bill
    
     print(" \t TotalDays             : \(TotalDays) ")
     print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
+    print(" ******************************************************")
 
     }
 }

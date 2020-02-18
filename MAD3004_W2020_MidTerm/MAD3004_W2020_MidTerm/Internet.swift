@@ -19,7 +19,7 @@ class Internet : Bill
         self.internetGbUsed  = internetGbUsed
           //self.totalBillAmount = totalBillAmount
         super.init (billId , billDate, billType)
-        self.totalBillAmount = Int(internetGbUsed) * Int(0.20)
+        self.totalBillAmount = Int( Double(internetGbUsed) * (0.20))
     }
     
    override func Display()
