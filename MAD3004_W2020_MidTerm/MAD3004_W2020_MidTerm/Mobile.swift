@@ -21,10 +21,14 @@ class Mobile : Bill
     {
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
-        
+        if mobileNumber.count != 10
+         {
+            print("Invalid Mobile Number \(mobileNumber) : cannot be less than 0 digits")
+        }
         
 
         self.mobileNumber   = mobileNumber
+      
         self.internetGbUsed = internetGbUsed
         self.minuteUsed     = minuteUsed
       // self.totalBillAmount = totalBillAmount
