@@ -7,17 +7,20 @@
 //
 
 import Foundation
-
+enum InsuranceType {
+    case mobile, home
+    
+}
 class Insurance : Bill
 {
     var InsuranceProviderName : String
-    var TypeOfInsurance : String
+    var TypeOfInsurance : InsuranceType
     var StartDate : Date
     var EndDate : Date
     var TotalDays : Int
     var TotalInstallmentToPay : Double
     
-    init (  billId : Int , billDate : Date , billType : String ,InsuranceProviderName : String ,TypeOfInsurance : String , StartDate : Date ,EndDate : Date ,TotalDays : Int ,TotalInstallmentToPay : Double)
+    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date ,TotalDays : Int ,TotalInstallmentToPay : Double)
 
     {
         self.InsuranceProviderName = InsuranceProviderName
@@ -27,9 +30,15 @@ class Insurance : Bill
         self.TotalDays = TotalDays
         self.TotalInstallmentToPay = TotalInstallmentToPay
         
-    super.init (billId , billDate, billType)
+        super.init (billId , billDate, billType)
 
     }
+    //func StartingDate(String : (String) -> Date
+                      //{
+     //   let dateformatGet1 = DateFormatGet1.date(from : startDate)
+  //      return startDate1 !
+        
+    //    })
     override func Display()
     {
         super.Display()
