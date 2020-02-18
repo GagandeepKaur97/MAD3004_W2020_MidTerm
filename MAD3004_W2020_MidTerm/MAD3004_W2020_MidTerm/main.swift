@@ -65,20 +65,21 @@ Customer.customerDetails.append(c3)
 let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: "sherry2312.gk@gmail.com")
 //c4.Display()
 Customer.customerDetails.append(c4)
-
-getCustomerById(cId: 3)
-/*let calendar = Calendar.current
-let d1 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 26)
+let calendar = Calendar.current
+let d1 = DateComponents(calendar: calendar, year: 2019, month: 12, day: 20)
 let dm1 = calendar.date(from: d1)
 
-let d2 = DateComponents(calendar: calendar, year: 2019, month: 9, day: 25)
+let d2 = DateComponents(calendar: calendar, year: 2019, month: 7, day: 25)
 let dm2 = calendar.date(from: d2)
 
-let d3 = DateComponents(calendar: calendar, year: 2019, month: 8, day: 24)
+let d3 = DateComponents(calendar: calendar, year: 2019, month: 5, day: 24)
 let dh3 = calendar.date(from: d3)
 
-let d4 = DateComponents(calendar: calendar, year: 2019, month: 7, day: 23)
+let d4 = DateComponents(calendar: calendar, year: 2019, month: 3, day: 21)
 let di4 = calendar.date(from: d4)
 
-let d5 = DateComponents(calendar: calendar, year: 2019, month: 6, day: 22)
-let di5 = calendar.date(from: d5)*/
+let d5 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 22)
+let di5 = calendar.date(from: d5)
+var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .mobile, StartDate: dh3!, EndDate: di5!, TotalDays: <#Int#>, TotalInstallmentToPay: 123)
+ins1.Display()
+getCustomerById(cId: 3)
