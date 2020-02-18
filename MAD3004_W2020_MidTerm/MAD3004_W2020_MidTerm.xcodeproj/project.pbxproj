@@ -17,6 +17,7 @@
 		9B92F30623F6159B001E3DC4 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30523F6159B001E3DC4 /* Mobile.swift */; };
 		9B92F30823F61945001E3DC4 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30723F61945001E3DC4 /* Hydro.swift */; };
 		9B92F30A23F61CD3001E3DC4 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30923F61CD3001E3DC4 /* Customer.swift */; };
+		9BBDE21223FC8AFE0062F88F /* Extension.Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9B92F30523F6159B001E3DC4 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B92F30723F61945001E3DC4 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9B92F30923F61CD3001E3DC4 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.Int.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				4258724723FA0064003C9131 /* Insurance.swift */,
 				4258724923FB2A0D003C9131 /* StringExtension.swift */,
 				4258724B23FB8EE9003C9131 /* BillType.swift */,
+				9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */,
 			);
 			path = MAD3004_W2020_MidTerm;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				9B92F2F923F60B11001E3DC4 /* main.swift in Sources */,
 				4258724A23FB2A0D003C9131 /* StringExtension.swift in Sources */,
 				9B92F30423F612BC001E3DC4 /* Internet.swift in Sources */,
+				9BBDE21223FC8AFE0062F88F /* Extension.Int.swift in Sources */,
 				9B92F30823F61945001E3DC4 /* Hydro.swift in Sources */,
 				9B92F30223F610ED001E3DC4 /* IDisplay.swift in Sources */,
 			);
