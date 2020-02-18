@@ -38,7 +38,7 @@ c1.addBill(bill: c1i)
 
 Customer.customerDetails.append(c1)
 
-//c1.findBill(for: 1)// this is used to display bill by bill id .
+c1.findBill(for: 1)// this is used to display bill by bill id .
 
 //c1.Display()
 
