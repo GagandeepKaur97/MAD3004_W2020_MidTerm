@@ -28,8 +28,7 @@ class Insurance : Bill
     {
         self.InsuranceProviderName = InsuranceProviderName
         self.TypeOfInsurance       = TypeOfInsurance
-       let formatter = DateFormatter()
-       formatter.dateFormat = "EEE, MMM,dd"
+    
        self.StartDate             = StartDate
         self.EndDate               = EndDate
         self.TotalDays             = Calendar.current.dateComponents([.day], from: StartDate, to: EndDate).day!
@@ -45,12 +44,12 @@ class Insurance : Bill
         super.Display()
     print(" \t InsuranceProviderName : \(self.InsuranceProviderName)")
     print(" \t TypeOfInsurance       : \(self.TypeOfInsurance) ")
-        let date = StartDate.formatingDate(Date: StartDate)
+        //let date = StartDate.formatingDate(Date: StartDate)
          
-    print(" \t StartDate             : \(date) ")
-        let date2 = EndDate.formatingDate(Date:EndDate)
+    print(" \t StartDate             : \(self.StartDate) ")
+       // let date2 = EndDate.formatingDate(Date:EndDate)
         
-    print(" \t EndDate               : \(date2) ")
+    print(" \t EndDate               : \(self.EndDate) ")
    
     print(" \t TotalDays             : \(TotalDays) ")
     print(" \t TotalInstallmentToPay :\(self.TotalInstallmentToPay) ")
