@@ -18,7 +18,6 @@
 		9B92F30823F61945001E3DC4 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30723F61945001E3DC4 /* Hydro.swift */; };
 		9B92F30A23F61CD3001E3DC4 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92F30923F61CD3001E3DC4 /* Customer.swift */; };
 		9BBDE21223FC8AFE0062F88F /* Extension.Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */; };
-		9BBDE21423FC9AFF0062F88F /* Extensiondate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBDE21323FC9AFF0062F88F /* Extensiondate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,7 +45,6 @@
 		9B92F30723F61945001E3DC4 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9B92F30923F61CD3001E3DC4 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.Int.swift; sourceTree = "<group>"; };
-		9BBDE21323FC9AFF0062F88F /* Extensiondate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiondate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				9B92F30923F61CD3001E3DC4 /* Customer.swift */,
 				4258724723FA0064003C9131 /* Insurance.swift */,
 				4258724923FB2A0D003C9131 /* StringExtension.swift */,
-				9BBDE21323FC9AFF0062F88F /* Extensiondate.swift */,
 				4258724B23FB8EE9003C9131 /* BillType.swift */,
 				9BBDE21123FC8AFE0062F88F /* Extension.Int.swift */,
 			);
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B92F30623F6159B001E3DC4 /* Mobile.swift in Sources */,
-				9BBDE21423FC9AFF0062F88F /* Extensiondate.swift in Sources */,
 				9B92F30A23F61CD3001E3DC4 /* Customer.swift in Sources */,
 				4258724823FA0064003C9131 /* Insurance.swift in Sources */,
 				9B92F30023F60C31001E3DC4 /* Bill.swift in Sources */,

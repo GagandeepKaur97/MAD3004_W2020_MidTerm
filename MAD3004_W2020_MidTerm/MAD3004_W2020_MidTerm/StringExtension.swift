@@ -10,7 +10,7 @@ import Foundation
 
 extension String
 {
-    func Emailvalidation() -> Bool {
+    func Emailvalidation() -> Bool {                          // stackflow
         let EmailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let EmailTest = NSPredicate(format : "SELF MATCHES %@" , EmailRegex)
         return EmailTest.evaluate(with: self)
