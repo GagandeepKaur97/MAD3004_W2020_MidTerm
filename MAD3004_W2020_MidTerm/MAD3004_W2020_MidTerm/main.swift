@@ -45,8 +45,8 @@ let c2 = Customer(customerId: 2, firstName: "vipul", lastName: "garg", emailId: 
 
 let c2h = Hydro(billId: 1, billDate: Date(), billType:.Hydro, agencyName: "Planet energy", unitConsumed: 29)
 let c2i = Internet(billId: 2, billDate: Date(), billType: .Internet, providerName: "rogers", internetGbUsed: 500)
-let c2m = Mobile(billId: 3, billDate: Date(), billType:.Mobile, mobileManufacturerName: "Galaxy samsung INC", planName: "prepaid talk + TAX plan", mobileNumber: "877765657868", internetGbUsed: 5, minuteUsed: 356)
-let c2m2 = Mobile(billId: 4, billDate: Date(), billType: .Mobile, mobileManufacturerName: "Apple INC.Iphone X MAX+", planName: "Lte + 3G 9.5 GB promo plan", mobileNumber: "769663579", internetGbUsed: 4, minuteUsed: 230)
+let c2m = Mobile(billId: 3, billDate: Date(), billType:.Mobile, mobileManufacturerName: "Galaxy samsung INC", planName: "prepaid talk + TAX plan", mobileNumber: "8777656578", internetGbUsed: 5, minuteUsed: 356)
+let c2m2 = Mobile(billId: 4, billDate: Date(), billType: .Mobile, mobileManufacturerName: "Apple INC.Iphone X MAX+", planName: "Lte + 3G 9.5 GB promo plan", mobileNumber: "7696635979", internetGbUsed: 4, minuteUsed: 230)
 
 c2.addBill(bill: c2h)
 c2.addBill(bill: c2i)
@@ -57,7 +57,10 @@ c2.addBill(bill: c2m2)
 Customer.customerDetails.append(c2)
 
 let c3 = Customer(customerId: 3, firstName: "anita", lastName: "langrik", emailId: "hwegdue@gmail.com")
+let c3m = Mobile(billId: 1, billDate: Date(), billType: .Mobile, mobileManufacturerName: "bell", planName: "postpaid", mobileNumber: "6578946589", internetGbUsed: 12, minuteUsed: 250)
 
-c3.Display()
+//c3.Display()
+c3.addBill(bill: c3m)
+Customer.customerDetails.append(c3)
 
-getCustomerById(cId: 2)
+getCustomerById(cId: 3)
