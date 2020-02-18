@@ -13,11 +13,11 @@ class Bill     :   IDisplay{
     
     var billId          : Int
     var billDate        : Date
-    var billType        : String
+    var billType        : BillType
     var totalBillAmount : Double
     var date :String
     
-    init (_ billId : Int, _ billDate : Date , _ billType : String ){
+    init (_ billId : Int, _ billDate : Date , _ billType : BillType ){
         self.billId = billId
         self.billDate = billDate
         self.billType = billType

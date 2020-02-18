@@ -8,11 +8,11 @@
 
 import Foundation
 
-class Customer : IDisplay
-{
-    
-    
-    
+class Customer : IDisplay{
+enum CustomerNotFound {
+    case EmailIdInvailid , MobileNumberInvalid
+}
+
     var customerId : Int
     var firstName  : String
     var lastName   : String
@@ -33,9 +33,19 @@ class Customer : IDisplay
         self.customerId       = customerId
         self.firstName        = firstName
         self.lastName         = lastName
-        self.emailId           = emailId
+        if emailId.Emailvalidation() == true
+        {
+                self.emailId = emailId
+        }
+        else
+        {
+            self.emailId = "Invalid email id \(emailId)"
+        }
+                
         
-     //  super.init(billId, billDate, billType, totalBillAmount)
+        
+        
+
         
     }
     
@@ -66,7 +76,7 @@ class Customer : IDisplay
         //print("  \t firstName         :\(self.firstName   )")
         //print("  \t lastName          :\(self.lastName    )")
         print("FullName          :\(self.fullName   )")
-        print("EmailId           :\(self.emailId   )")
+        print("EmailId           :\(String(describing: self.emailId)   )")
         
         print(" _________Bill Information_______")
         print("***************************************************")
