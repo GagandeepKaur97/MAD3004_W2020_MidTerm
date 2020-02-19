@@ -62,7 +62,9 @@ let c3m = Mobile(billId: 1, billDate: Date(), billType: .Mobile, mobileManufactu
 
 c3.Display()
 c3.addBill(bill: c3m)
+
 Customer.customerDetails.append(c3)
+
 let c4 = Customer(customerId: 4, firstName: "gagan", lastName: "kaur", emailId: "sherry2312.gk@gmail.com")
 c4.Display()
 Customer.customerDetails.append(c4)
@@ -82,6 +84,7 @@ let dh4 = calendar.date(from: d4)
 
 let d5 = DateComponents(calendar: calendar, year: 2019, month: 10, day: 22)
 let dh5 = calendar.date(from: d5)
-var ins1 = Insurance(billId: 1, billDate: Date(), billType: .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .home , StartDate: dh4!,EndDate: dh5!)
+var ins1 = Insurance(billId :1 , billDate : Date() , billType : .Mobile, InsuranceProviderName: "LIC", TypeOfInsurance: .home , StartDate: dh4!,EndDate: dh5!)
 ins1.Display()
+
 getCustomerById(cId: 2)

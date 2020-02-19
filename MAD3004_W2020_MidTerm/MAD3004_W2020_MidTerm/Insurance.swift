@@ -23,7 +23,7 @@ class Insurance : Bill
     var TotalDays             : Int
     var TotalInstallmentToPay : Float = 0.0
     
-    init (  billId : Int , billDate : Date , billType : BillType,InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date  )
+    init ( billId :Int, billDate : Date, billType: BillType, InsuranceProviderName : String ,TypeOfInsurance : InsuranceType, StartDate : Date ,EndDate : Date  )
 
     {
         self.InsuranceProviderName = InsuranceProviderName
